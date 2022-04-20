@@ -9,7 +9,7 @@
 @font-face {
     font-family: charter;
     src: url('../fonts/charter-italic.otf');
-    font-style: normal;
+    font-style: italic;
     font-weight: 400;
 
 }
@@ -25,24 +25,25 @@
 @font-face {
     font-family: charter;
     src: url('../fonts/charter-bold-italic.otf');
-    font-style: normal;
+    font-style: italic;
     font-weight: bold;
 
 }
 
 :root {
     font-size: 18px;
-    --gray30: #f0f0f0;
-    --gray30: #f0f0f0;
-    --gray30: #e4e0e0;
+    --gray30: #030303;
+    --gray30: #0f0e0e;
+    --gray30: #080808;
     
     
 }
 
 body {
     color: var(--gray30);
+    font-family: 'Roboto', sans-serif;
     font-family: charter;
-    background-color: #1b1f27;
+    background-color: #ffffff;
 }
 
 a {
@@ -52,4 +53,15 @@ a {
 header {
     font-size: 14px;
     color: var(--gray30);
+}
+
+pre {
+ background: #FEC62E;
+    ;
+}
+
+.hero   {
+    background-image:linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url(../images/patron-1.png);
+    height: 350px;
+    
 }
