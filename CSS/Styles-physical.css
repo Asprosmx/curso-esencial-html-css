@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: charter;
     src: url('../fonts/charter-regular.otf');
@@ -34,6 +35,9 @@ h1 {
     font-size: 60px;
     margin-top: 64px;
     margin-bottom: 16px; 
+    width: 400px;
+    height: 400px;
+    padding: 40px;
 
 }
 
@@ -58,6 +62,10 @@ h3{
     margin-top: 16px;
     margin-bottom: 24px;
     font-weight: normal;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid ;
+    box-sizing: border-box;
 }
 :root {
     font-size: 18px;
@@ -87,12 +95,33 @@ header {
 
 pre {
  background: #FEC62E;
-    ;
+  padding: 40px; 
+  font-family: 'Roboto';
+  line-height: 24px;
 }
 
 blockquote{
+    font-size: 24px;
     margin: 32px 0;
+    padding-left: 16px;
+    line-height: 24px;
+  /*border: 1px solid  red;*/
+  border-left: 4px solid var (--gray30);
+  border-style: ridge;
 }
+blockquote span {
+    color: var(--gray10);
+}
+blockquote span ::before {
+    content: '-';
+}
+
+input {
+    padding: 10px 20px;
+    margin: 20px; 
+    display: block;
+    width: 500px;
+} 
 
 .hero   {
     background-image:linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url(../images/patron-1.png);
@@ -132,10 +161,11 @@ blockquote{
 
 .section-content h3{
     counter-increment: titleList;
+    padding-bottom: 4px;
 }
 
 .section-content h3::before{
-    content: counter(titleList, decimal) "-";
+    content: counter(titleList, decimal) ". ";
 }
 
 .section-content h3::after{ 
@@ -147,6 +177,6 @@ blockquote{
 }
 
 
-::selection{
+/*::selection{
     background: red;
-}
+}*/
