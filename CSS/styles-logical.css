@@ -55,8 +55,11 @@ a {
 
 header {
     font-size: 14px;
+    width: 188px;
     color: var(--white);
-    position: static;
+    position: absolute;
+    top: 64px;
+    left: -232px;
     
 }
 
@@ -81,6 +84,7 @@ h1{
     font-size: 60px;
     margin-block-start: 64px;
     margin-block-end: 16px;
+    font-weight: normal;
 }
 
 h2{
@@ -91,7 +95,11 @@ h2{
 h3{
     font-size: 1.5em;
     font-weight: 600;
-    margin-block: 16px;
+    margin-bottom: 16px;
+    font-weight: normal;
+    position: sticky;
+    
+    
 }
 
 hr{
@@ -128,6 +136,7 @@ p{
 
 .section-content h3{
     counter-increment: titleList;
+    padding-bottom: 8px;
 }
 
 .section-content h3::before{
@@ -136,10 +145,13 @@ p{
 
 .section-content h3::after{ 
     content: '';
-    width: 32px;
+    width: 80px;
     height: 4px;
     background: var(--white30);
     display: inline-block;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
 }
 
 blockquote {
@@ -150,12 +162,16 @@ blockquote {
 }
 
 
+
 .main hr{
     display:none;
 }
 
+.header-content {
+    position: relative
+}
+
 .main{
-border: 1px;
 }
 
 .wrapper {
