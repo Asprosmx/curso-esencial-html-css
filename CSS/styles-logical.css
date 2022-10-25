@@ -34,10 +34,11 @@
     font-size: 18px;
     --white10: #3A3539;
     --white20: #A5A3A5;
-    --white30: white;
-    
-    
-    
+    --white30: white;   
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -76,6 +77,15 @@ header a{
 header a:hover {
     color: var(--white30);
     
+}
+
+nav details summary {
+    font-weight: bold;
+    
+}
+
+header li {
+    margin-bottom: 16px;
 }
 
 
@@ -161,7 +171,19 @@ blockquote {
     border-radius: 8px;
 }
 
+blockquote span {
+    color: var(--white30);
+}
 
+blockquote span::before {
+    content: '-';
+}
+
+.header{
+    border: 1px;
+    position: sticky;
+    top: 0;
+}
 
 .main hr{
     display:none;
