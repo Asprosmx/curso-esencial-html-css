@@ -11,10 +11,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,400;1,700&family=Roboto:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <title>El Blog de Carlos</title>  
     </head>
-<body>
-    
+<body> 
     <div class="hero"></div>
-    <input type="text">
     <div class="header">
       <div class="wrapper">
       <div class="header-content">
@@ -39,6 +37,7 @@
                         </a>
                     </ol>
                 </details>
+
                 <details open>
                     <summary>
                         Conceptos escenciales del Desarrollo Web
@@ -147,8 +146,10 @@
                         <h3 id="css">CSS</h3>
                         <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML</p>
                         <img src="images/CSS.png" alt="Propiedades de CSS" title="Propiedades de CSS">
-                        <hr>
                     </section>
+
+                        <hr>
+                        
                     <section class="section-content">
         
                         <h2>Modelo de caja</h2>
@@ -175,13 +176,47 @@
                             <li>padding-block/padding-inline/padding-block-start/padding-block-end/padding-inline-start/padding-inline-end</li>
                         </ul>
                     </section>
-                <p>
-                Si tienes alguna pregunta ecribeme a
-                    <a href="mailto:carlosstark.hunter@gmail.com">carlosstark.hunter@gmail.com</a>
-                </p>
+                    
+                    <div class="section-content">
+                        <h2>Te dejo unos videos para que estudies con mejor musica!</h2>
+    
+    
+                        <div class="slider">
+                            <scroll-container class="slider-container">
+                                <scroll-page class="slider-slide">
+                                    <iframe class="video" id="video-1" width="560" height="315" src="https://www.youtube.com/embed/5Z8Fifbu0eM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </scroll-page>
+                                <scroll-page class="slider-slide">
+                                    <iframe class="video" id="video-2" width="560" height="315" src="https://www.youtube.com/embed/jrTMMG0zJyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </scroll-page>
+                                <scroll-page class="slider-slide">
+                                    <iframe class="video" id="video-3" width="560" height="315" src="https://www.youtube.com/embed/ak5a9H7NpJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </scroll-page>
+    
+    
+                            </scroll-container>
+                            <div class="slider-bullet-list">
+                                <a href="#video-1" class="slider-bullet"></a>
+                                <a href="#video-2" class="slider-bullet"></a>
+                                <a href="#video-3" class="slider-bullet"></a>
+                            </div>
+    
+                        </div>
                     </div>
+                <p>Si tienes alguna pregunta escríbeme a <a href="mailto:carlos.devs94@gmail.com">carlos.devs94@gmail.com</a></p>
+                <div class="section-content">
+                    <h2>Ingresa a nuestro newsletter</h2>
+    
+                    <form action="#" class="form">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Correo Electrónico" required>
+                        <input type="submit" value="Suscribirme">
+                        
+                        
+                    </form>
                 </div>
-                
-            </main>
-</body>
-</html>
+                </div>
+            </div>
+        </main>
+      </body>
+    </html>

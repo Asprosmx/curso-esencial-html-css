@@ -53,16 +53,9 @@ body {
 a {
     color: var(--white30);
 }
-
-header {
-    font-size: 14px;
-    width: 188px;
-    color: var(--white);
-    position: absolute;
-    top: 64px;
-    left: -232px;
-    
-}
+ .header-content {
+    padding-inline: 20px;
+ }
 
 header li {
     color: var(--white20);
@@ -91,9 +84,9 @@ header li {
 
 
 h1{
-    font-size: 60px;
-    margin-block-start: 64px;
-    margin-block-end: 16px;
+    font-size: 40px;
+    margin-block-start: 16px;
+    margin-block-end: 20px;
     font-weight: normal;
 }
 
@@ -152,6 +145,7 @@ p{
 .section-content img{
     margin-block-start: 40px;
     display: block;
+    max-inline-size: 100%;
 }
 
 .section-content {
@@ -179,7 +173,7 @@ p{
 }*/
 
 blockquote {
-  
+    
     
     margin-block-start: 80px;
     margin-block-end: 63px;
@@ -205,28 +199,115 @@ blockquote span::before {
     content: '';
 }
 
-.header{
-    border: 1px;
-    position: sticky;
-    top: 0;
-}
 
 .main hr{
     display:none;
 }
 
-.header-content {
-    position: relative
-}
 
-.main{
-}
+
 
 .wrapper {
     max-inline-size: 902px;
     margin: auto;
 }
 
-.main-content {
+.main-content{
+    max-inline-size: 902px;
+    margin: auto;
     padding-inline: 16px;
+}
+
+/* .slider{
+} */
+
+.slider-container{
+    display: block;
+    overflow: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+.video{
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9; /* Que es la proporcion que vienen lo videos */
+}
+
+.slider-bullet-list{
+    text-align: center;
+}
+
+.slider-bullet{
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background-color: white;
+    border-radius: 50%;
+    margin-block: 1rem;
+    margin-inline: 1.5px;
+    font-size: 0;
+}
+
+.slider-bullet:hover{
+    background-color: #5551FF;
+}
+
+.form input{
+    width: 100%;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    background-color: var(--white30);
+    /* background: #251f24; */
+    border-radius: 8px;
+    font-size: 16px;
+    padding-block: 12px;
+    padding-inline: 16px;
+    color: var(--white10);
+    display: block;
+    margin-block-end: 24px;
+}
+
+.form input[type="submit"]{
+    background-color: #6d15fb;
+    border: none;
+    color: white;
+}
+
+.form input::-webkit-input-placeholder{
+    color: var(--white20);
+    
+}
+
+@media screen and ( min-width: 1366px) {
+    .hero {
+        block-size: 350px;
+    }
+    
+    .header{
+        position: sticky;
+        inset-block-start: 20px;
+    }
+    
+    .header-content {
+        position: relative
+        
+    }
+    
+    header {
+        font-size: 14px;
+        width: 188px;
+        color: var(--white);
+        position: absolute;
+        inset-block-start: 35px;
+        inset-inline-start:-208px ;
+        inline-size: 188px;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-block-start: 64px;
+    }
 }
